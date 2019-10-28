@@ -59,13 +59,13 @@ syntax on
 let mapleader=","
 
 "================= vundle ===========================
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"filetype off
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 
-if filereadable(expand("~/.vimrc.bundles"))
-    source ~/.vimrc.bundles
-endif
+"if filereadable(expand("~/.vimrc.bundles"))
+"    source ~/.vimrc.bundles
+"endif
 
 
 " ================ Turn Off Swap Files ==============
