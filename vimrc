@@ -293,21 +293,22 @@ set guifont=Monaco:h16
 
 
 
-" Reveal current file in NERDTree with <Leader>r
-map <Leader>r <esc>:NERDTreeFind<cr>
 
-" 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
-nmap <Leader>fl :NERDTreeToggle<CR>
+" 使用 NERDTree 插件查看工程文件。设置快捷键
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
 " 设置NERDTree子窗口宽度
 let NERDTreeWinSize=32
 " 设置NERDTree子窗口位置
-let NERDTreeWinPos="right"
+let NERDTreeWinPos="left"
 " 显示隐藏文件
 let NERDTreeShowHidden=1
 " NERDTree 子窗口中不显示冗余帮助信息
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
 
 " ===== SYNTASTIC
 "mark syntax errors with :signs
